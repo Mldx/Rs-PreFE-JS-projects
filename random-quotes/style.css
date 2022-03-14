@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+:root{
+    --color-main: #ffb1bc;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    background: #f5f5f5;
+}
+
+a, a:active {
+    transition: color .5s;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--color-main);
+}
+
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper_header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    user-select: none;
+}
+
+.header__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    cursor: default;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.wrapper_main {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.quotes{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    width: 600px;
+    font-family: Roboto, sans-serif;
+}
+
+
+
+.quotes__lang{
+    font-size: 2.5rem;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.lang__input{
+    display: none;
+}
+.lang__text{
+    cursor: pointer;
+    transition: color .2s;
+
+}
+.lang__input:checked + .lang__text{
+    color: var(--color-main);
+}
+
+
+
+
+.quotes__button {
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    background: var(--color-main);
+    color: white;
+    box-shadow: 1px 1px 3px rgba(255, 0, 8, 0.64);
+    user-select: none;
+    cursor: pointer;
+    transition: transform .2s;
+    align-self: center;
+    outline-style: none;
+    margin-bottom: 40px;
+}
+
+.quotes__button:active{
+    transform: translateY(4px);
+}
+.quotes__title{
+    font-weight: 600;
+    display: flex;
+    justify-content: start;
+}
+.quotes__text{
+    margin-top: 10px;
+    font-size: 2.5rem;
+    line-height: 125%;
+    display: flex;
+    justify-content: start;
+}
+
+.shadow{
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+}
+.wrapper_footer {
+    font-family: Roboto, serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    user-select: none;
+}
+
+.year {
+    cursor: default;
+}
+
+.logoRS__link {
+    display: block;
+    width: 80px;
+    height: 30px;
+    background: url("images/footer/rs_school_js.svg") no-repeat center;
+    background-size: contain;
+}
+
+.logoRS__link:hover {
+    filter: invert(72%) sepia(4%) saturate(2774%) hue-rotate(304deg) brightness(104%) contrast(107%);
+}

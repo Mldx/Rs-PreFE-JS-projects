@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video player</title>
+    <link rel="shortcut icon" href="images/favicon/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="prefetch" href="images/svg/play-btn-hov.svg">
+    <link rel="prefetch" href="images/svg/mute.svg">
+    <link rel="prefetch" href="images/svg/pause.svg">
+</head>
+<body>
+<div class="site">
+<header class="header">
+    <div class="wrapper wrapper_header">
+        <h1 class="header__title">
+            Custom video player
+        </h1>
+    </div>
+</header>
+<main class="main">
+    <div class="wrapper wrapper_main">
+        <div class="video-player">
+            <div class="poster"></div>
+            <video class="video-player__viewer" src="video/video.mp4" preload="metadata"></video>
+            <button class="video-player__play"></button>
+            <div class="video-player__controls">
+                <div class="controls__play"></div>
+                <input class="range_progress" value="0" type="range" min="0" max="100" step="0.1">
+                <div class="controls__volume"></div>
+                <input class="range_volume" type="range" value="10" min="0" max="100">
+                <div class="time">
+                    <span class="time__current">00:00</span>
+                    <span class="time__slash">/</span>
+                    <span class="time__duration">00:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper wrapper_footer">
+        <div class="footer__link">
+            <a href="https://github.com/Mldx" class="link">MLDX</a>
+        </div>
+        <div class="year">2022</div>
+        <div class="logoRS">
+            <a href="https://rs.school/js/" class="logoRS__link"></a>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</div>
+</body>
+</html>
